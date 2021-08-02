@@ -118,6 +118,113 @@ namespace ConsoleApp3
                 clasificacion = "Obesidad";
             }
             Console.WriteLine(clasificacion);
+
+            //condicional en corto circuito (Y)
+
+            if (edades[0] >= 18 && (imc > 18.5 && imc < 24.9)) { 
+                
+            }
+
+            //condicional en corto circuito (O)
+
+            if (edades[0] >= 18 || (imc > 18.5 && imc < 24.9))
+            {
+
+            }
+
+            String estadoCivil = "Casado";
+
+            if (estadoCivil == "Casado")
+            {
+
+            }
+            else if (estadoCivil == "Soltero")
+            {
+
+            }
+            else if (estadoCivil == "Divorciado")
+            {
+
+            }
+            else if (estadoCivil == "Viudo")
+            {
+
+            }
+            else { 
+            
+            }
+
+            //la anterior validación se puede simplificar con un switch o según
+
+            switch (estadoCivil) {
+                case "Casado": {
+                        //
+                        break; 
+                    }
+                case "Soltero":
+                    {
+                        //
+                        break;
+                    }
+                case "Divorciado":
+                    {
+                        //
+                        break;
+                    }
+                case "Viudo":
+                    {
+                        //
+                        break;
+                    }
+                default: {
+                        //
+                        break;
+                    }
+            }
+            //Ciclo Para
+            for (int p = 0;p<=10;p++)  {
+                Console.WriteLine("Hola mundo: " + p);
+                
+            }
+
+            //Ciclo Para
+            for (int q = 0; q < 9; q++)
+            {
+                Console.WriteLine(edades[q]);
+
+            }
+
+            //acceder a los elementos de un vector - arreglo unidimensional
+
+            int j = 0;
+            //Ciclo Mientras
+            while (j <= 10) {
+
+                j++;
+            }
+
+            //Caso de amortización:
+            long A;//valor del préstamo
+            double i;//valor del interes mensual
+            double n;//meses para pagar el préstamo
+            double R;//mensualidad o renta
+            Console.WriteLine("Ingrese el valor del prestamo");
+            A = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor del interes");
+            i = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese la cantidad de meses");
+            n = Convert.ToDouble(Console.ReadLine());
+
+            //calcular la mensualidad
+            R = (A*i) / (1-(Math.Pow(1+i,-n)));
+            //variables para amortización, interese mensual, saldo mensual
+            Console.WriteLine("El valor de la mensualidad es:" + R);
+            Console.WriteLine("Periodo\tRenta\t\t\tInteres\tAmortizacion\tSaldo");
+            for (int k = 1; k <= n; k++) {
+                //modificar amortización, interese mensual, saldo mensual
+                Console.WriteLine(k+ "\t"+R);
+            }
+
         }
 
     }

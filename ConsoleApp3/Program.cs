@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+
 
 namespace ConsoleApp3
 {
@@ -193,7 +195,16 @@ namespace ConsoleApp3
                 Console.WriteLine(edades[q]);
 
             }
-
+            Console.WriteLine("Comportamiento del contador");
+            for (int s = 0; s < 9; s++)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine("Comportamiento del contador con incremento de 3 en 3");
+            for (int g = 0; g < 9; g += 3)
+            {
+                Console.WriteLine(g);
+            }
             //acceder a los elementos de un vector - arreglo unidimensional
 
             int j = 0;
@@ -223,6 +234,31 @@ namespace ConsoleApp3
             for (int k = 1; k <= n; k++) {
                 //modificar amortización, interese mensual, saldo mensual
                 Console.WriteLine(k+ "\t"+R);
+            }
+            //realizar recorrido de arreglos
+            //for especializado en colecciones (estructuras de datos)
+            foreach(int data in edades) {
+                Console.WriteLine("Contenido del arreglo:" + data);
+            }
+            Console.WriteLine("Recorrido con ciclo mientras, validando con la longitud del arreglo (propiedad Length)");
+            int u = 0;
+            while (u < edades.Length) {
+                Console.WriteLine(edades[u]);
+                u++;
+            }
+            //Ciclo hacer - mientras
+            Console.WriteLine("Recorrido con ciclo hacer - mientras");
+            int w = 0;
+            do {
+               Console.WriteLine(edades[w]);
+                w++;
+            } while (w < edades.Length);
+
+            //Recorrido con una enumeración de posición del arreglo
+            Console.WriteLine("Recorrido con enumeración");
+            IEnumerator indiceContenido = edades.GetEnumerator();
+            while (indiceContenido.MoveNext()) {
+                Console.WriteLine(indiceContenido.Current);
             }
 
         }

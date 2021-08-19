@@ -6,24 +6,42 @@ namespace ConsoleApp3
 {
     class Program
     {
-        //creacion de la enumeración <> nuevo tipo de dato, con valores fijos
-        enum EstadoCivil {
-            Soltero,
-            Casado, 
-            Viudo, 
-            UnionLibre,
-            Separado
-        }
-        enum RespuestaUsuario { 
-            si = 11,
-            no = 22,
-            cancelar = 44,
-            salir = 33
-        
-        }
         static void Main(string[] args)
         {
-            /*
+            int na;
+            //solicitar el número total de datos
+            Console.WriteLine("Ordenamiento de datos");
+            Console.WriteLine("Ingrese la cantidad total de datos:");
+            na = Convert.ToInt32(Console.ReadLine());
+            //crear un nuevo arreglo
+            int[] daticos = new int[na];
+            //recibir dato por dato y almacenarlo en arreglo
+            for (int dd = 0; dd < na; dd++) {
+                Console.WriteLine("Ingrese un valor:");
+                daticos[dd] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            //método de ordenación de datos en arreglo
+            //Burbuja: Bubblesort
+            //https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja
+            int aux;
+            for (int z = 1; z < daticos.Length; z++) {
+                for (int v = 0; v < (daticos.Length - z); v++) {
+                    if (daticos[v] > daticos[v + 1])
+                    {//intercambio de datos entre dos posiciones
+                        aux = daticos[v];
+                        daticos[v] = daticos[v + 1];
+                        daticos[v + 1] = aux;                        
+                    }
+                }
+            }
+            //mostrar los datos ordenados
+            Console.WriteLine("Datos ordenados");
+            for (int cont = 0; cont < daticos.Length; cont++)
+            {
+                Console.Write(daticos[cont]);
+
+            }
             int x;//definir la variable tipo entero
             int y = 99;//define la variable y la inicializa
             int a, b=99, c=98, d;
@@ -32,6 +50,7 @@ namespace ConsoleApp3
             Boolean encendido;//tipo lógico: true - false
             int[] edades = new int[] {19,19,29,21,23,33,44,11,9};//definición e instancia del objeto
             edades[0] = 19;
+            Console.WriteLine("***********");
             Console.WriteLine(edades[8]);
             double[] notas = new double[15];
             //Console.WriteLine("Ingrese su nombre:");
@@ -175,7 +194,7 @@ namespace ConsoleApp3
             //la anterior validación se puede simplificar con un switch o según
 
             switch (estadoCivil) {
-                 case "Casado": {
+                case "Casado": {
                         //
                         break; 
                     }
@@ -276,57 +295,7 @@ namespace ConsoleApp3
             while (indiceContenido.MoveNext()) {
                 Console.WriteLine(indiceContenido.Current);
             }
-            */
-            //generar una enumeración: datos predeterminados
-            EstadoCivil ec = EstadoCivil.Casado;
-            Console.WriteLine(ec);
-            RespuestaUsuario ru = RespuestaUsuario.cancelar;
-            Console.WriteLine((int)ru);
-            if (ec == EstadoCivil.Soltero) {             
-            
-            }
-            int respuesta = 1;
-            if (respuesta == (int)EstadoCivil.Casado) {
-                Console.WriteLine("Se ha seleccionado el valor Casado");
-            }
 
-            //arreglo unidimensional - vector
-            int[] edades = new int[] { 19, 66, 19, 29, 21, 23, 33, 44, 11, 9, 55};//definición e instancia del objeto
-            //La propiedad Length retorna cantidad total de datos
-            Console.WriteLine("Cantidad total de edades: " + edades.Length);
-            for (int g = 0; g < edades.Length; g++) {
-                Console.WriteLine(edades[g]);
-            }
-
-
-                //arreglos multidimensionales
-                //arreglo de dos dimensiones: matriz - tabla
-                int[,] datos = new int[2,3];
-            Console.WriteLine("Cantidad total de datos: " + datos.GetLength(1));
-
-
-            //contador q representa filas
-            for (int q = 0; q < datos.GetLength(0); q++)
-            {
-                //contador r representa columnas
-                for (int r = 0; r < datos.GetLength(1); r++)
-                {
-                    Console.WriteLine(q + " - " + r);
-                }
-
-            }
-            datos[0, 0] = 11;
-            datos[0, 1] = 22;
-            datos[0, 2] = 33;
-            datos[0, 3] = 44;
-            datos[0, 4] = 55;
-            datos[1, 0] = 55;
-            datos[1, 1] = 55;
-            datos[1, 2] = 55;
-            //datos[0, 5] = 22;//Error de límite de columnas
-            //arreglo de tres dimensiones: cubo
-            int[,,] info = new int[2, 3, 5];
-            info[0, 0, 0] = 22;
         }
 
     }

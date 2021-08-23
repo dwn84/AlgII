@@ -1,0 +1,11 @@
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.exe
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.deps.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.runtimeconfig.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.runtimeconfig.dev.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\bin\Debug\netcoreapp3.1\EjemploArreglos.pdb
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\obj\Debug\netcoreapp3.1\EjemploArreglos.csprojAssemblyReference.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\obj\Debug\netcoreapp3.1\EjemploArreglos.AssemblyInfoInputs.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\obj\Debug\netcoreapp3.1\EjemploArreglos.AssemblyInfo.cs
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\obj\Debug\netcoreapp3.1\EjemploArreglos.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploArreglos\obj\Debug\netcoreapp3.1\EjemploArreglos.pdb

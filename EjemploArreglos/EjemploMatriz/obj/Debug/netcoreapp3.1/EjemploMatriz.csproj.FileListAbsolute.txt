@@ -1,0 +1,11 @@
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.exe
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.deps.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.runtimeconfig.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.runtimeconfig.dev.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\bin\Debug\netcoreapp3.1\EjemploMatriz.pdb
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\obj\Debug\netcoreapp3.1\EjemploMatriz.csprojAssemblyReference.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\obj\Debug\netcoreapp3.1\EjemploMatriz.AssemblyInfoInputs.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\obj\Debug\netcoreapp3.1\EjemploMatriz.AssemblyInfo.cs
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\obj\Debug\netcoreapp3.1\EjemploMatriz.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\EjemploMatriz\obj\Debug\netcoreapp3.1\EjemploMatriz.pdb

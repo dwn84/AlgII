@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploArreglos", "EjemploArreglos.csproj", "{4E03F05D-1B15-41D0-BAD9-BD6A9F2711BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploMatriz", "..\EjemploMatriz\EjemploMatriz.csproj", "{488BE282-9342-41EC-B095-5ECB5F357BF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploMatriz", "..\EjemploMatriz\EjemploMatriz.csproj", "{488BE282-9342-41EC-B095-5ECB5F357BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacionesMatrices", "..\OperacionesMatrices\OperacionesMatrices.csproj", "{95749C64-62E5-4649-8056-EA9911C202BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{488BE282-9342-41EC-B095-5ECB5F357BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488BE282-9342-41EC-B095-5ECB5F357BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488BE282-9342-41EC-B095-5ECB5F357BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95749C64-62E5-4649-8056-EA9911C202BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95749C64-62E5-4649-8056-EA9911C202BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95749C64-62E5-4649-8056-EA9911C202BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95749C64-62E5-4649-8056-EA9911C202BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

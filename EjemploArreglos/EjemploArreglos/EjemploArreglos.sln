@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploArreglos", "EjemploA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploMatriz", "..\EjemploMatriz\EjemploMatriz.csproj", "{488BE282-9342-41EC-B095-5ECB5F357BF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacionesMatrices", "..\OperacionesMatrices\OperacionesMatrices.csproj", "{95749C64-62E5-4649-8056-EA9911C202BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacionesMatrices", "..\OperacionesMatrices\OperacionesMatrices.csproj", "{95749C64-62E5-4649-8056-EA9911C202BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "..\Quiz\Quiz.csproj", "{091A322F-E636-4666-AA10-45C7AD33A27B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{95749C64-62E5-4649-8056-EA9911C202BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95749C64-62E5-4649-8056-EA9911C202BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95749C64-62E5-4649-8056-EA9911C202BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091A322F-E636-4666-AA10-45C7AD33A27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091A322F-E636-4666-AA10-45C7AD33A27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091A322F-E636-4666-AA10-45C7AD33A27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091A322F-E636-4666-AA10-45C7AD33A27B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

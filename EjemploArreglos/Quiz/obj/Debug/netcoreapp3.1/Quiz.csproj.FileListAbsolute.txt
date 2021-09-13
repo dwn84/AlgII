@@ -1,0 +1,11 @@
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.exe
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.deps.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.runtimeconfig.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.runtimeconfig.dev.json
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\bin\Debug\netcoreapp3.1\Quiz.pdb
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\obj\Debug\netcoreapp3.1\Quiz.csprojAssemblyReference.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\obj\Debug\netcoreapp3.1\Quiz.AssemblyInfoInputs.cache
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\obj\Debug\netcoreapp3.1\Quiz.AssemblyInfo.cs
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\obj\Debug\netcoreapp3.1\Quiz.dll
+C:\xampp\htdocs\servicios\AlgII\EjemploArreglos\Quiz\obj\Debug\netcoreapp3.1\Quiz.pdb

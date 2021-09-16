@@ -62,21 +62,27 @@ namespace Quiz
             int[,] dato1 = new int[Filas, Columnas];
             int[,] dato2 = new int[Filas, Columnas];
 
-
+            dato1[0, 0] =1;
+            dato1[0, 1] =2;
+            dato1[1, 0] =-2;
+            dato1[1, 1] =3;
+            int a = 1, b = 1;//indices decrementales para el proceso
             for (int i = 0; i < Filas; i++)
             {
                 for (int k = 0; k < Columnas; k++)
                 {
-                    dato1[i, k] = NumAle.Next(1, 22);
+                    //dato1[i, k] = NumAle.Next(1, 22);
 
                     Console.Write("{0}\t", dato1[i, k]);
 
                 }
-
                 for (int k = 0; k < Columnas; k++)
                 {
-                    dato2[i, k] = (int)Math.Pow(-1, i + k) * dato1[i, k];
+                    dato2[i, k] = (int)Math.Pow(-1, i + k) * dato1[a, b];
+                    b--;
                 }
+                a--;
+                b = 1;
                 for (int k = 0; k < Columnas; k++)
                 {
                     Console.Write("\t{0}", dato2[i, k]);

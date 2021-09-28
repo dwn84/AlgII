@@ -4,23 +4,39 @@ namespace EjemplosFuncionesProcedimientos
 {
     class Program
     {
-               
+        //Definir, crear los campos de la clase. Variables u objetos que se utilizaran en toda la clase.
+        static double area;
+        static int datico = 1;
+
+        public static int Datico
+        {
+            get { return datico; }//Obtener el valor del campo - Dar permiso de lectura
+            set { datico = value; }//Modificar el valor del campo - Dar permiso de escritura        
+        }
+
+        //Creación de propiedades
+        //Método especializado en asociarse con un campo: lectura y escritura de valor
+        //Encapsular el campo
+        public static double Area {
+            get {return area;}//Obtener el valor del campo - Dar permiso de lectura
+            set {area = value;}//Modificar el valor del campo - Dar permiso de escritura        
+        }
+
         static void Main(string[] args)
         {
 
+            miFuncionR();
+
             string nom = "Edwin";
+            Area = 99;//invocando set
+            Console.WriteLine(Area);//invocando get
             mostrarMensajeBienvenida(nom);
 
             Console.WriteLine("Calcular el áea de un triángulo");
             //invocar la función, con sus diferentes sobrecargas(variantes)
 
-            int miEdad = 19;
-            //las funciones no modifican a sus parámetros
-            //reciben los datos por valor
-            Console.WriteLine("Edad actual: " + miEdad);
-            bool resultadoValidarEdad =  validarEdad(ref miEdad);
-            Console.WriteLine("Edad actual: " + miEdad);
-                                 
+            area = 99;
+            
             Console.WriteLine("Ingrese la medida del lado 1:");
             double x1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingrese la medida del lado 2:");
@@ -73,7 +89,7 @@ namespace EjemplosFuncionesProcedimientos
         static private double calcularAreaTriangulo(double baseTriangulo, double altura) 
         {
             mostrarMensajeBienvenida();
-            double area = (baseTriangulo*altura)/2;
+            area = (baseTriangulo*altura)/2;
             return area;            
         }
 
@@ -87,20 +103,20 @@ namespace EjemplosFuncionesProcedimientos
         /// <returns></returns>
         static private double calcularAreaTriangulo(double lado)
         {
-            double area = (0.433) * (lado * lado);
+            area = (0.433) * (lado * lado);
             return area;
         }
         /// <summary>
-        /// asdf jklñ
+        /// Calcular el area de un triangulo escaleno
         /// </summary>
-        /// <param name="lado1">qwer</param>
-        /// <param name="lado2">zxcv</param>
-        /// <param name="lado3">uiop</param>
+        /// <param name="lado1">medida del lado 1</param>
+        /// <param name="lado2">medida del lado 2</param>
+        /// <param name="lado3">medida del lado 3</param>
         /// <returns>hola....</returns>
         static private double calcularAreaTriangulo(double lado1, double lado2, double lado3) 
         {
             double s = (lado1 + lado2 + lado3) / 2;
-            double area = Math.Sqrt((s*(s-lado1))*(s-lado2)*(s-lado3));
+            area = Math.Sqrt((s*(s-lado1))*(s-lado2)*(s-lado3));
             return area;
         }
         /// <summary>
@@ -112,7 +128,7 @@ namespace EjemplosFuncionesProcedimientos
         /// <returns></returns>
         static private double calcularAreaTriangulo(double lado1, double lado2, float angulo)
         {
-            double area = (0.5) * (lado1 * lado2) * Math.Sin(angulo);
+            area = (0.5) * (lado1 * lado2) * Math.Sin(angulo);
             return area;
         }
 
@@ -179,5 +195,34 @@ namespace EjemplosFuncionesProcedimientos
         {
             Console.WriteLine("Hello {0}, Welcome home!",nombre);
         }
+
+        //Recursividad: Es un método (función o procedimiento) que invoca en su interior a el mismo
+        //Técnica que permite realizar iteraciones (ciclos, bucles: for - while).
+        //Se utiliza para estructuras de datos no lineales.
+
+        static private int miFuncionR() {
+
+            //Plantear caso base
+            if (Datico == 10)
+            {
+                return 11;
+            }
+            else {
+                Datico++;
+                Console.WriteLine("Dato: " + Datico);
+                return miFuncionR();    
+            }
+
+
+            //Si no se controlan o validan las llamadas, se tiene un ciclo infinito: Stack overflow
+            //Para evitar el ciclo infinito, se debe especificar un caso base
+            //Un caso base es: validación que permite indicar cuando se retorna un valor o cuando se repite el proceso
+
+        }
+
+
+ 
+ 
+
     }
 }

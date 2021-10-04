@@ -25,6 +25,12 @@ namespace EjemplosFuncionesProcedimientos
         static void Main(string[] args)
         {
 
+            int www = factorialN(5);
+            Console.WriteLine("Factorial de 5: {0}", www);
+            www = sumatoriaN(5);
+            Console.WriteLine("Sumatoria de 5: {0}", www);
+            www = fibonacci(8);
+            Console.WriteLine("Elemento 8 de fibonacci: {0}", www);
             miFuncionR();
 
             string nom = "Edwin";
@@ -220,9 +226,46 @@ namespace EjemplosFuncionesProcedimientos
 
         }
 
+        //otros ejemplos de recursividad
+        static private int factorialN(int n) {
+            //caso base
+            if (n == 0)
+            {
+                return 1;
+            }
+            else {
+                return n*factorialN(n-1);
+            }
 
- 
- 
+        }
+
+        static private int sumatoriaN(int n)
+        {
+            //caso base
+            if (n == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n + sumatoriaN(n - 1);
+            }
+
+        }
+
+        static private int fibonacci(int n)
+        {
+            //caso base
+            if (n == 1 || n == 0)
+            {
+                return n;
+            }
+            else
+            {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
 
     }
 }

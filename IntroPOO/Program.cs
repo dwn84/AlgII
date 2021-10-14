@@ -23,13 +23,27 @@ namespace IntroPOO
             banpolombia.saldo = 100000;
             banpolombia.nombreTitular = "Nerón Navarrete";
             banpolombia.numeroCuenta = 111221;
-            banpolombia.Retirar();
+            banpolombia.Retirar(10000);
+            banpolombia.MostrarSaldoTotal();
+            banpolombia.Retirar(20000);
+            banpolombia.MostrarSaldoTotal();
+            banpolombia.Retirar(30000);
+            banpolombia.MostrarSaldoTotal();
+            banpolombia.Retirar(1000);
+            banpolombia.MostrarSaldoTotal();
+            banpolombia.Retirar(9999);
+            banpolombia.MostrarSaldoTotal();
+            banpolombia.Retirar(3000);
+
 
             davivienda.saldo = 33000;
             davivienda.nombreTitular = "Esperanza Gómez";
             davivienda.numeroCuenta = 111223;
-            davivienda.Consignar();
-            davivienda.Consignar();
+            davivienda.saldo = 333333333;
+            davivienda.Retirar(11111111);
+            davivienda.Consignar(10000000,"14/10/2021","Edicio Coltejer","Edwin");
+            davivienda.Consignar(2222222, "14/10/2021","Centro Comercial Premium","Esperzanza");
+            davivienda.MostrarSaldoTotal();
 
 
         }

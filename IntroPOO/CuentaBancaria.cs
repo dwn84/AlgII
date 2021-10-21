@@ -7,9 +7,24 @@ namespace IntroPOO
     class CuentaBancaria
     {
         //Campos o características para los objetos
-        public string nombreTitular;
-        public int numeroCuenta;
-        public double saldo;
+        private string nombreTitular;
+        private int numeroCuenta;
+        private double saldo;
+
+        //Constructor de clase
+        public CuentaBancaria(string nt, int nc, double s,bool xyz) {
+            nombreTitular = nt;
+            numeroCuenta = nc;
+            saldo = s;
+        }
+        //segundo constructor de clase: sobrecarga del constructor
+        public CuentaBancaria(string nn) {
+            nombreTitular = nn;
+        }
+        //tercer constructo de clase
+        public CuentaBancaria(int saldito) {
+            saldo = saldito;
+        }
 
         //Comportamiento, acciones o métodos: funciones o procedimientos
         //Los métodos tienen delegadas responsabilidades específicas

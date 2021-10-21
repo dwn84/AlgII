@@ -16,10 +16,13 @@ namespace IntroPOO
             puntico.TrasladarCoordenadaY();
             puntico.TrasladarCoordenadaY();
             Console.WriteLine("Coordenada Y:{0}", puntico.CoordenadaY);
+            Console.WriteLine("Objeto creado con una clase sin constructor:");
+            CuentaBancaria colmena = new CuentaBancaria("ggf",55,22,true);
+            colmena.MostrarSaldoTotal();
 
-            CuentaBancaria banpolombia = new CuentaBancaria();
-            CuentaBancaria davivienda = new CuentaBancaria();
-            CuentaBancaria conavi = new CuentaBancaria();
+            CuentaBancaria banpolombia = new CuentaBancaria("wtf");
+            CuentaBancaria davivienda = new CuentaBancaria("Oelo");
+            CuentaBancaria conavi = new CuentaBancaria(54635364);
             banpolombia.saldo = 100000;
             banpolombia.nombreTitular = "Nerón Navarrete";
             banpolombia.numeroCuenta = 111221;
